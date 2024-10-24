@@ -71,7 +71,7 @@ object  Animals {
   }
 
   // Vector
-  val highway2 = Seq(dillo1, dillo2)
+  val highway3 = Seq(dillo1, dillo2)
 
   val highwayDead = highway.runOver
 
