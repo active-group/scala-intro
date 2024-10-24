@@ -49,12 +49,13 @@ object  Animals {
 
   val highway = List(dillo1, dillo2)
   val parrot1 = Parrot("Hello", 1)
-  val highway2 = highway.::(parrot1)
+  val highway2 = parrot1 :: highway
+  val highway2_2 = highway.::(parrot1) // = highway2, weil :: mit einem Doppelpunkt aufhört
 
   def runOverAnimals(animals: List[Animal]): List[Animal] =
     animals match {
-      case Nil => ???
-      case head :: next => ???
+      case Nil => Nil
+      case head :: next => head.runOver :: runOverAnimals(next)
     }
 
 }
