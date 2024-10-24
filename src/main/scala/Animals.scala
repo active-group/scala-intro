@@ -49,7 +49,7 @@ object  Animals {
 
   val highway = List(dillo1, dillo2)
   val parrot1 = Parrot("Hello", 1)
-  val highway2 = parrot1.::(highway)
+  val highway2 = highway.::(parrot1)
 
   def runOverAnimals(animals: List[Animal]): List[Animal] =
     animals match {
