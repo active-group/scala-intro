@@ -63,6 +63,6 @@ object  Animals {
   extension (animals: List[Animal])
     def runOver = runOverAnimals(animals)
 
-  val highwayDead = highway.
+  val highwayDead = highway
 
 }
