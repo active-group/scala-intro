@@ -18,5 +18,14 @@ object  Animals {
     Dillo(Liveness.Dead, 8)
   }
 
+  import Animal._
+
+  def runOver(animal: Animal): Animal = 
+    animal match {
+      case dillo@Dillo(liveness, weight) =>
+        // Dillo(Liveness.Dead, weight)
+        dillo.copy(liveness = Liveness.Dead)
+      case Parrot(sentence, weight) => ???
+    }
 
 }
