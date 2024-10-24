@@ -44,6 +44,7 @@ object  Animals {
   val dillo1RunOver = runOver.apply(dillo1)
   val dillo1RunOver2 = runOver(dillo1) // = dillo1RunOver
   val dillo1RunOver3 = dillo1.runOver
+  import scala.languageFeature.postfixOps
   val dillo1RunOver4 = dillo1 runOver // = dillo1RunOver3 
 
   val highway = List(dillo1, dillo2)
