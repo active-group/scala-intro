@@ -12,6 +12,11 @@ object  Animals {
     case Parrot(sentence: String, weight: Weight)
   }
 
-  val dillo = Animal.Dillo(Liveness.Alive, 10)
+  val dillo1 = Animal.Dillo(Liveness.Alive, 10)
+  val dillo2 = {
+    import Animal._
+    Dillo(Liveness.Dead, 8)
+  }
+
 
 }
