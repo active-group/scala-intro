@@ -58,4 +58,11 @@ object  Animals {
       case head :: next => head.runOver :: runOverAnimals(next)
     }
 
+  // Konvention: Methoden + Pattern-Matching
+
+  extension (animals: List[Animal])
+    def runOver = runOverAnimals(animals)
+
+  val highwayDead = highway.
+
 }
