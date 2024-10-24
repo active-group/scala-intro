@@ -2,7 +2,7 @@ object  Animals {
 
   enum MyList[+A] { // Varianzannotation
     case Empty
-    case Cons(first: A, rest: List[A])
+    case Cons(first: A, rest: MyList[A])
   }
 
   type Weight = Double
