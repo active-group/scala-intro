@@ -1,6 +1,6 @@
 object  Animals {
 
-  enum MyList[+A] {
+  enum MyList[+A] { // Varianzannotation
     case Empty
     case Cons(first: A, rest: List[A])
   }

@@ -23,7 +23,7 @@ object Lists {
 
   // idiomatische Version:
   extension[A] (list: List[A])
-    def myFold[B](z: B)(f: (A, B) => B): B =
+    def myFold[B](z: B)(f: (A, B) => B): B = // fold gibt's schon
       list match {
         case Nil => z
         case head :: tail => f(head, tail.myFold(z)(f))
