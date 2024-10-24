@@ -62,7 +62,8 @@ object  Animals {
 
   extension (animals: List[Animal])
     def runOver = // runOverAnimals(animals)
-      animals.map(runOverAnimal)
+      // animals.map(runOverAnimal)
+      animals.map({ animal => animal.runOver})
 
   val highwayDead = highway.runOver
 
