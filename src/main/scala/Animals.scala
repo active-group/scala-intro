@@ -25,7 +25,8 @@ object  Animals {
       case dillo@Dillo(liveness, weight) =>
         // Dillo(Liveness.Dead, weight)
         dillo.copy(liveness = Liveness.Dead)
-      case Parrot(sentence, weight) => ???
+      case Parrot(sentence, weight) =>
+        Parrot("", weight)
     }
 
 }
