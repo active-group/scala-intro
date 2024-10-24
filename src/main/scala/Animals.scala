@@ -30,6 +30,8 @@ object  Animals {
 
   import Animal._
 
+  // val: Wert, def: Funktion
+
   def runOver(animal: Animal): Animal = 
     animal match {
       case dillo@Dillo(liveness, weight) =>
@@ -39,7 +41,17 @@ object  Animals {
         Parrot("", weight)
     }
 
-  val dillo1RunOver = runOver(dillo1)
+  val dillo1RunOver = runOver.apply(dillo1)
+  val dillo1RunOver2 = runOver dillo1 // = dillo1RunOver
+  val dillo1RunOver3 = dillo1.runOver
+  val dillo1RunOver3 = dillo1 runOver // = dillo1RunOver3 
 
+  val highway = List(dillo1, dillo2)
+
+  def runOverAnimals(animals: List[Animal]): List[Animal] =
+    animals match {
+      case Nil => ???
+      case head :: next => ???
+    }
 
 }
