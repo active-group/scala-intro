@@ -75,4 +75,6 @@ object  Animals {
 
   val highwayDead = highway.runOver
 
+  // Hinweis: Collections-Hierarchie, meistens ist es Seq
+
 }
