@@ -61,8 +61,9 @@ object  Animals {
   // Konvention: Methoden + Pattern-Matching
 
   extension (animals: List[Animal])
-    def runOver = runOverAnimals(animals)
+    def runOver = // runOverAnimals(animals)
+      animals.map(runOver)
 
-  val highwayDead = highway
+  val highwayDead = highway.runOver
 
 }
