@@ -41,7 +41,7 @@ object  Animals {
         Parrot("", weight)
     }
 
-  val dillo1RunOver = runOver.apply(dillo1)
+  val dillo1RunOver = runOverAnimal.apply(dillo1)
   val dillo1RunOver2 = runOverAnimal(dillo1) // = dillo1RunOver
   val dillo1RunOver3 = dillo1.runOver
   import language.postfixOps
