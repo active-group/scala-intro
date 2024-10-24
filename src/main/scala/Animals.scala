@@ -32,7 +32,7 @@ object  Animals {
 
   // val: Wert, def: Funktion
 
-  def runOver(animal: Animal): Animal = 
+  def runOverAnimal(animal: Animal): Animal = 
     animal match {
       case dillo@Dillo(liveness, weight) =>
         // Dillo(Liveness.Dead, weight)
@@ -42,7 +42,7 @@ object  Animals {
     }
 
   val dillo1RunOver = runOver.apply(dillo1)
-  val dillo1RunOver2 = runOver(dillo1) // = dillo1RunOver
+  val dillo1RunOver2 = runOverAnimal(dillo1) // = dillo1RunOver
   val dillo1RunOver3 = dillo1.runOver
   import language.postfixOps
   val dillo1RunOver4 = dillo1 runOver // = dillo1RunOver3 
