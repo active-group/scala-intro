@@ -42,7 +42,7 @@ object  Animals {
     }
 
   val dillo1RunOver = runOver.apply(dillo1)
-  val dillo1RunOver2 = runOver dillo1 // = dillo1RunOver
+  val dillo1RunOver2 = runOver(dillo1) // = dillo1RunOver
   val dillo1RunOver3 = dillo1.runOver
   val dillo1RunOver3 = dillo1 runOver // = dillo1RunOver3 
 
