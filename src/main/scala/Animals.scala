@@ -37,7 +37,7 @@ object  Animals {
       case dillo@Dillo(liveness, weight) =>
         // Dillo(Liveness.Dead, weight)
         dillo.copy(liveness = Liveness.Dead)
-      case Parrot(sentence, weight) =>
+      case Parrot(_, weight) =>
         Parrot("", weight)
     }
 
@@ -69,6 +69,9 @@ object  Animals {
 
     def foo = animals.reverse
   }
+
+  // Vector
+  val highway2 = Seq(dillo1, dillo2)
 
   val highwayDead = highway.runOver
 
