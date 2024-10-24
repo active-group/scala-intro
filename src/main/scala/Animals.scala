@@ -48,6 +48,8 @@ object  Animals {
   val dillo1RunOver4 = dillo1 runOver // = dillo1RunOver3 
 
   val highway = List(dillo1, dillo2)
+  val parrot1 = Parrot("Hello", 1)
+  val highway2 = parrot1.::(highway)
 
   def runOverAnimals(animals: List[Animal]): List[Animal] =
     animals match {
