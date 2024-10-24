@@ -11,7 +11,8 @@ object  Animals {
     case Dillo(liveness: Liveness, weight: Weight)
     case Parrot(sentence: String, weight: Weight)
 
-    def runOver(): Animal =
+    // Konvention: rein funktionale Methoden ohne Argumente ohne Klammern
+    def runOver: Animal =
       this match {
         case dillo@Dillo(liveness, weight) =>
           // Dillo(Liveness.Dead, weight)
@@ -37,5 +38,8 @@ object  Animals {
       case Parrot(sentence, weight) =>
         Parrot("", weight)
     }
+
+  val dillo1RunOver = runOver(dillo1)
+
 
 }
